@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=0.8">
+    <meta charset="UTF-8">
+    <title>Help me with my mood!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Barrio|Monoton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+
+			<div class="sidebar">
+					<p><i class="material-icons">mood</i><span>Mind Shift</span></p>
+					<ul>
+						<li class="actve" id="home"><i class="material-icons">launch</i><span>HOME</span></li>
+						<li><i class="material-icons">info_outline</i><span>HOW IT WORKS</span></li>
+						<li><i class="material-icons">help_outline</i><span>GET HELP</span></li>
+						<li><i class="material-icons">help_outline</i><span>TERMS OF USE</span></li>
+						<li><i class="material-icons">people_outline</i><span>ABOUT US</span></li>
+						
+					</ul>
+			</div>
+			<div class="main">
+				<div class="nav-wrapper">
+				    <span class="logo">Your cheerleader, when you need one!</span>
+				    <ul class="right">
+				       	<li class="minimize" id="min-button"></li>
+				        <li class="maximize"></li>
+				        <li class="close" id="close-button"></li>
+				     </ul>
+				</div>
+				<div id="loading" style="display: none;">LOADING...</div>
+				<div class="mainbody body1 valign-wrapper" id="body1">
+
+					<div class="row">
+				    	<div class="col s12 m4">
+				      		<div class="card card1" id="card1">
+				        		<div class="card-content white-text">
+				          			<p class="title">First</p>
+				          			<span class="sub-title"> TIME HERE?</span>
+				          			<p class="body-text">Share your interests, likes and dislikes and from there its on us to provide you a curated list of essentials to help you with your day.</p>
+				          			<button class="action" id="reg">GET STARTED</button>
+				        		</div>
+				      		</div>
+				    	</div>
+
+				    	<div class="col s12 m4">
+				      		<div class="card card2">
+				        		<div class="card-content white-text">
+				          			<p class="title">Start from</p>
+				          			<span class="sub-title"> WHERE YOU LEFT OFF</span>
+				          			<p class="body-text">Already shared your interests? Great! Get right into the good part.</p>
+				          			<button class="action" id="continue">CONTINUE</button>
+				        		</div>
+				      		</div>
+				    	</div>
+
+				    	<div class="col s12 m4">
+				      		<div class="card card3">
+				        		<div class="card-content white-text">
+				          			<p class="title">Leave</p>
+				          			<span class="sub-title">IT ON US</span>
+				          			<p class="body-text">Skip providing your details and get started with the bare essentials. We will find the best stuff for you.</p>
+				          			<button class="action" id="quick-start">QUICK START</button>
+				        		</div>
+				      		</div>
+				    	</div>
+				  	</div>
+
+				  	<div class="quote-header">Quote of the day!</div>
+				  	<div class="quote z-depth-2">
+				  		<img class="z-depth-2" src="images/bg-01.jpg"/>
+				  		<i class="material-icons">format_quote</i>
+						<p class="quote-text">Some days are just bad days, that's all. You have to experience sadness to know happiness, and I remind myself that not every day is going to be a good day, that's just the way it is!<p>
+					</div>
+
+				</div>
+
+				<div class="body2 mainbody" id="body2">
+					<div class="qs-wrapper z-depth-2">
+
+						<img src="images/flower.jpg" class="bg">
+
+						<div class="content">
+							<p>Lets get going</p>
+							<div class="input-field">
+							  	<i class="material-icons prefix">account_circle</i>
+							   	<input  id="icon_prefix" type="text" style="margin-left: 30px;">
+							  	<label for="icon_prefix">Twitter Username</label>
+						    </div>
+						    <button class="submit-qs" id="submit-qs">LOAD AWESOMENESS</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="body3 mainbody" id="body3">
+					<div class="reg-wrapper row ">
+						<div class="col s6 reg-content z-depth-3 ">
+							<div class="progress">
+							    <div class="determinate" style="width: 0%"></div>
+							</div>
+							<div class="reg-header">hey there!</div>
+							<div class="form">
+								<div id="uname-contain">
+									<p class="label" id="uname-label">What is your twitter username?</p><br>
+									<input type="text" id="uname" placeholder="USERNAME"/>
+									<br><br><button class="next" id="next0">NEXT</button>
+								</div>
+								<div id="name-contain">
+									<p class="label" id="name-label">What should we call you?<br> (You can use this name in 'CONTINUE' tab from next time)</p><br>
+									<input type="text" id="name" placeholder="NAME"/>
+									<br><br><button class="next" id="next1">NEXT</button>
+									<br><br><button class="next" id="prev0">PREVIOUS</button>
+								</div>
+								<div id="lang-contain">
+									<br><p class="label" id="name-label">What language do you prefer your music in? We currtnely offer English, hindi and Bengali</p>
+									<div class="input-field col s12">
+									<select multiple style="width: 200px;" name="garden">
+								      <option value="1">ENGLISH</option>
+								      <option value="2">HINDI</option>
+								      <option value="3">BENGALI</option>
+								    </select>
+								</div>
+									<br><br><button class="next" id="next2">NEXT</button>
+									<br><br><button class="next" id="prev1">PREVIOUS</button>
+								</div>
+								<div id="genre-contain">
+									<br><p class="label" id="genre-label">What genre of music do you prefer?</p>
+									<div class="chips chips-autocomplete chips-placeholder">
+									    <input class="custom-class">
+									</div>
+									<br><br><button class="next" id="next3">NEXT</button>
+									<br><br><button class="next" id="prev2">PREVIOUS</button>
+
+								</div>
+								<div id="read-contain">
+									<br><p class="label" id="read-label">Do you like to read?</p>
+									<input type="text" id="read" placeholder="TYPE 'YES' or 'NO'" />
+									<br><br><button class="next" id="next4">NEXT</button>
+									<br><br><button class="next" id="prev3">PREVIOUS</button>
+								</div>
+								<div id="animal-contain">
+									<br><p class="label" id="animal-label">What animal do you find cute?</p>
+									<p>
+								      	<label>
+								        	<input type="checkbox" class="animals"/>
+								        	<span>Cat</span>
+								      	</label>
+								      	<label>
+								        	<input type="checkbox" class="animals"/>
+								        	<span>Dog</span>
+								      	</label>
+								      	<label>
+								        	<input type="checkbox" class="animals"/>
+								        	<span>Bunny</span>
+								      	</label>
+								    </p>
+								    <p>
+								      	<label>
+								        	<input id="checkbox" type="checkbox" class="animals"/>
+								        	<span>Panda</span>
+								      	</label>
+								      	<label>
+								        	<input type="checkbox" class="animals"/>
+								        	<span>Sloth</span>
+								      	</label>
+								      	<label>
+								        	<input type="checkbox" class="animals"/>
+								        	<span>Penguin</span>
+								      	</label>
+								    </p>
+								    <p>
+								      	<label>
+								        	<input id="all" type="checkbox" class="animals"/>
+								        	<span>All of them, even Blob Fish</span>
+								      	</label>
+								    </p>
+								    <br><button class="next" id="next5">SHOW STUFF ALREADY!</button>
+								    <br><br><button class="next" id="prev4">PREVIOUS</button>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>	
+
+				<div class="body4 mainbody" id="body4">
+					<div class="con-wrapper row ">
+						<div class="col s6 con-content z-depth-3 ">
+							<div class="con-header">hey, glad you are back!</div>
+							<div class="form">
+								<div id="name1-contain">
+									<br><p class="label" id="name1-label">What was your name again though?</p>
+									<input type="text" id="name1" placeholder="NAME"/>
+								</div>
+								<br><br><button class="next" id="next1" onclick="get_odd()">BRING THEM IN</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+
+    <script>
+    	window.$ = window.jQuery = require("./js/jquery.js");
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/home.js"></script>
+
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
