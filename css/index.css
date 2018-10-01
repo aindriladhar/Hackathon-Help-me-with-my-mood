@@ -141,7 +141,7 @@ body{
 }
 
 .body1{
-	display: none;
+	display: block;
 }
 
 .quote{
@@ -682,6 +682,28 @@ body{
 	height: 200px;
 }
 
+.howitworks .about{
+	background-color: #fff;
+	width: 33.333%;
+	float: left;
+	margin-top: 40px;
+	border-right: 2px solid #f1f2f8;
+	padding: 30px;
+	font-weight: 700;
+	font-size: 20px;
+	color: #616161;
+	position: relative;
+	text-align: center;
+	height: 250px;
+}
+
+.howitworks .about img{
+	display: block;
+	margin: 20px auto;
+	width: 100px;
+	height: 100px;
+}
+
 .howitworks .sec span{
 	position: absolute;
 	display: inline-block;
@@ -712,6 +734,19 @@ body{
 	display: none;
 }
 
+#termsofuse .thank{
+	font-size: 20px;
+	color: #212121;
+	text-align: center;
+	margin: 5px;
+	margin-bottom: 15px;
+}
+
+.terms-body{
+	text-align: justify;
+	color: #424242;
+}
+
 .terms-content{
 	padding: 30px!important;
 	background-color: #fff;
@@ -727,6 +762,23 @@ body{
 .termsofuse p{
 	color: #424242;
 }
+
+/*__________________________________________________________________________________________________________________________________________*/
+/********************************************************************************************************************************************/
+/*-----------ABOUT----------------*/
+
+#about{
+	display: none;
+}
+
+.about-content{
+	padding: 30px!important;
+	background-color: #fff;
+}
+
+
+
+
 
 /*__________________________________________________________________________________________________________________________________________*/
 /********************************************************************************************************************************************/

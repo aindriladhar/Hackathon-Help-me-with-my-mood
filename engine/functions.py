@@ -25,8 +25,8 @@ def getTweets(userID):
 	try:
 		tweets = api.user_timeline(screen_name=userID, count=100, include_rts = False, tweet_mode = 'extended')
 	except tweepy.TweepError as e:
-		print(e.args[0][0]['message'])
-		sys.stdout.flush()
+		text = 'error'
+		return text
 		exit()
 	text = [tweet.full_text for tweet in tweets if (datetime.datetime.now() - tweet.created_at).days < 1]
 	if len(text) < 1:
@@ -39,7 +39,6 @@ def getTones(text):
 	'''
 		receives an array of string and uses watson to analyze the tone on each and finally return mean of the tones of each string as a dictionary
 	'''
-
 	#setting up tone_analyzer
 	tone_analyzer = ToneAnalyzerV3(
 	    version='2017-09-21',
@@ -145,7 +144,7 @@ def getMusic(tone_dict):
 	            music_list.append(key)
 	            break
 	if len(music_list)<10:
-		final = random.sample(range(1, len(music_list)), 5)
+		final = random.sample(range(1, len(music_list)), len(music_list)-1)
 	else:
 		final = random.sample(range(1, len(music_list)), 10)
 	music = []

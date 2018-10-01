@@ -1,0 +1,37 @@
+{
+	"1":{
+		"mood": "Joy",
+		"link": "https://tinybuddha.com/blog/10-things-happy-people-do-to-stay-happy/",
+		"name": "10 things happy people do to stay happy"
+	},
+	"2":{
+		"mood": "Confident",
+		"link": "https://www.entrepreneur.com/article/281874",
+		"name": "10 Things You Can Do to Boost Self-Confidence"
+	},
+	"3":{
+		"mood": "Analytical",
+		"link": "https://www.wikihow.com/Improve-Analytical-Skills/",
+		"name": "How to Improve Analytical Skills"
+	},
+	"4":{
+		"mood": "Tentative",
+		"link": "http://www.thelawofattraction.com/make-decisions-stop-indecisive/",
+		"name": "How To Make Decisions And Stop Being Indecisive"
+	},
+	"5":{
+		"mood": "Sadness",
+		"link": "https://www.wikihow.com/Get-Happy-when-You%27re-Sad",
+		"name": "How to Get Happy when You're Sad"
+	},
+	"6":{
+		"mood": "Fear",
+		"link": "https://www.mentalhealth.org.uk/publications/overcome-fear-anxiety",
+		"name": "How to overcome fear and anxiety"
+	},
+	"7":{
+		"mood": "Anger",
+		"link": "https://www.lifehack.org/articles/communication/20-things-when-you-feel-extremely-angry.html",
+		"name": "20 Things to Do When You Feel Extremely Angry"
+	},
+}

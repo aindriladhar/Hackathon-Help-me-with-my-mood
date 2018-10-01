@@ -8,6 +8,16 @@ userID = sys.argv[1]
 
 text = getTweets(userID)
 
+if text == 'error':
+	print('1')
+	sys.stdout.flush()
+	exit()
+elif text == 'no tweet':
+	print('2')
+	sys.stdout.flush()
+	exit()
+
+
 tone_analysis = getTones(text)
 
 tone_dict = formatTones(tone_analysis)

@@ -21,11 +21,13 @@ document.getElementById("home").addEventListener("click",function(e) {
 	$("#body3").fadeOut();
 	$("#body4").fadeOut();
 	$("#results").fadeOut();
+	$("#about").fadeOut();
 	$("#howitworks").fadeOut();
 	$("#termsofuse").fadeOut();
 	$("#load").fadeOut();
 	$("#home").addClass("actve");
 	$("#terms").removeClass("actve");
+	$("#aboutbtn").removeClass("actve");
 	$("#how").removeClass("actve");
 	$("#body1").delay(500).fadeIn();
 });
@@ -89,12 +91,14 @@ $("#how").click(function() {
 	$("#body2").fadeOut();
 	$("#body3").fadeOut();
 	$("#body4").fadeOut();
+	$("#about").fadeOut();
 	$("#results").fadeOut();
 	$("#termsofuse").fadeOut();
 	$("#howitworks").delay(500).fadeIn();
 	$("#how").addClass("actve");
 	$("#home").removeClass("actve");
 	$("#terms").removeClass("actve");
+	$("#aboutbtn").removeClass("actve");
 });
 
 $("#terms").click(function() {
@@ -103,11 +107,29 @@ $("#terms").click(function() {
 	$("#body3").fadeOut();
 	$("#body4").fadeOut();
 	$("#results").fadeOut();
+	$("#about").fadeOut();
 	$("#howitworks").fadeOut();
 	$("#termsofuse").delay(500).fadeIn();
 	$("#terms").addClass("actve");
 	$("#home").removeClass("actve");
 	$("#how").removeClass("actve");
+	$("#aboutbtn").removeClass("actve");
+});
+
+
+$("#aboutbtn").click(function() {
+	$("#body1").fadeOut();
+	$("#body2").fadeOut();
+	$("#body3").fadeOut();
+	$("#body4").fadeOut();
+	$("#results").fadeOut();
+	$("#termsofuse").fadeOut();
+	$("#howitworks").fadeOut();
+	$("#about").delay(500).fadeIn();
+	$("#aboutbtn").addClass("actve");
+	$("#home").removeClass("actve");
+	$("#how").removeClass("actve");
+	$("#terms").removeClass("actve");
 });
 
 
@@ -265,17 +287,31 @@ function getRecommendations(username){
 	
 	shell.on('message', function(message) {
 		$("#load").hide();		
-		$(':input').val('');
-		var array = message.split('*/*');
-		$("#vidrow").html(array[1]);
-		$("#musicrow").html(array[2]);
-		$("#toneslist").html(array[0]);
-		$("#username").html(username);
-		$("#results").fadeIn();
-		$("#home").removeClass("actve");
-		$('.carousel').carousel({
-			numVisible: 8
-		});
+		$("#result").hide();		
+		if(message === "1"){
+			alert('Twitter does not know the user you are looking for!');
+			$("#body1").delay(500).fadeIn();	
+			$(':input').val('');	
+		}
+		if(message === "2"){
+			alert('You did not post anything recently! If you still want our recommendations, Get started by creating your profile.');
+			$("#body1").delay(500).fadeIn();
+			$(':input').val('');			
+		}
+		else{
+			$(':input').val('');
+			var array = message.split('*/*');
+			$("#vidrow").html(array[1]);
+			$("#musicrow").html(array[2]);
+			$("#toneslist").html(array[0]);
+			$("#username").html(username);
+			$("#results").fadeIn();
+			$("#home").removeClass("actve");
+			$('.carousel').carousel({
+				numVisible: 8
+			});
+		}
+		
 	});
 }
 
