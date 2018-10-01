@@ -63,6 +63,7 @@ Help me with my mood(named Mind Shift) is a cross platform desktop app built usi
 
 # Current Limitations
 - The data store for Music and Videos are currently very low, as a result on certain user preferences matching data are not found quite often.
+- Incomplete backend and frontend  for reading material for users.
 
 
 
