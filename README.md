@@ -16,6 +16,8 @@ Help me with my mood(named Mind Shift) is a cross platform desktop app built usi
 - **Accessing Tweets:** Twitter api is used to access the tweets of a user.
 - **Tone Analyzing:** IBM's Waston tone analyzer is used for this purpose.
 - **Backend:** Python3 is used as backend for Mind Shift. And python-shell for node JS is used for communication between backend and frontend.
+- **Database:** JSON is used to store and retrieve all the data required by Mind Shift .
+
 
 #### Main Function Descriprions (found in /engine/assets/functions.py)
 - **getTweets():** Accepts a twitter username and returns the tweets for last 24 hours or 3 days if the username is valid and user has posted in the given time frame. Else returns appropriate error message
@@ -38,7 +40,10 @@ Help me with my mood(named Mind Shift) is a cross platform desktop app built usi
 
 - **getPersonalisedMusic():** Accepts a tone dictionary and a user profile. Returns all valid music that matches the tones and perefrences of the user.
 
-# 
+# Current Limitations
+- The data store for Music and Videos are currently very low, as a result on certain user preferences matching data are not found quite often.
+
+
 
 
 
