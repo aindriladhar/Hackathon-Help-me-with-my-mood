@@ -19,7 +19,7 @@ Help me with my mood(named Mind Shift) is a cross platform desktop app built usi
 - **Database:** JSON is used to store and retrieve all the data required by Mind Shift .
 
 
-#### Main Function Descriprions (found in /engine/assets/functions.py)
+#### Main Function Descriprions (found in /engine/functions.py)
 - **getTweets():** Accepts a twitter username and returns the tweets for last 24 hours or 3 days if the username is valid and user has posted in the given time frame. Else returns appropriate error message
 
 - **getTones():** Accepts an array of strings performs tone analysis on each using IBM Watson and returns the json
