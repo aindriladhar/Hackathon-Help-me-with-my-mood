@@ -23,6 +23,7 @@ Help me with my mood(named Mind Shift) is a cross platform desktop app built usi
 - **getTweets():** Accepts a twitter username and returns the tweets for last 24 hours or 3 days if the username is valid and user has posted in the given time frame. Else returns appropriate error message
 
 - **getTones():** Accepts an array of strings performs tone analysis on each using IBM Watson and returns the json
+<<<<<<< HEAD
 
 - **formatTones():** Accepts a json file that getTones returns and cleans it to make a dictionary with key val pair of tone name and probability respectively.
 
@@ -42,3 +43,29 @@ Help me with my mood(named Mind Shift) is a cross platform desktop app built usi
 
 # Current Limitations
 - The data store for Music and Videos are currently very low, as a result on certain user preferences matching data are not found quite often.
+=======
+
+- **formatTones():** Accepts a json file that getTones returns and cleans it to make a dictionary with key val pair of tone name and probability respectively.
+
+- **formatTonesHtml():** Accepts a dictionary that formatTones() returns, and forms a raw html string from it which is displayed to the user
+
+- **getVideos():** Accepts a tone dictiionary and returns all valid videos that matches the tones.
+
+- **getMusic():** Accepts a tone dictiionary and returns all valid music that matches the tones.
+
+- **formatVideos():** Accepts an array that getVideos() returns and formats it to raw HTML.
+
+- **formatMusic():** Accepts an array that getMusic() returns and formats it to raw HTML.
+
+- **getPersonalisedVideos():** Accepts a tone dictionary and a user profile. Returns all valid videos that matches the tones and perefrences of the user.
+
+- **getPersonalisedMusic():** Accepts a tone dictionary and a user profile. Returns all valid music that matches the tones and perefrences of the user.
+
+# Current Limitations
+- The data store for Music and Videos are currently very low, as a result on certain user preferences matching data are not found quite often.
+
+
+
+
+
+>>>>>>> f2fc07fe7cd89fc7433f9f73dddb37a84f6d3b4b
