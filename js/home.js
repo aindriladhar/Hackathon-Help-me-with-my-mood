@@ -20,10 +20,20 @@ document.getElementById("home").addEventListener("click",function(e) {
 	$("#body2").fadeOut();
 	$("#body3").fadeOut();
 	$("#body4").fadeOut();
+	$("#results").fadeOut();
+	$("#howitworks").fadeOut();
+	$("#termsofuse").fadeOut();
+	$("#load").fadeOut();
 	$("#home").addClass("actve");
+	$("#terms").removeClass("actve");
+	$("#how").removeClass("actve");
 	$("#body1").delay(500).fadeIn();
 });
 
+
+$(document).ready(function(){
+    $('.carousel').carousel();
+});
 $('select').formSelect(); //MATERIALIZE SELECT
 $('.chips').chips();//MATERIALIZE CHIPS
   $('.chips-autocomplete').chips({
@@ -74,7 +84,58 @@ document.getElementById("continue").addEventListener("click",function(e) {
 	$("#home").removeClass("actve");
 });
 
-/*REG FORM PREV NEXT*/
+$("#how").click(function() {
+	$("#body1").fadeOut();
+	$("#body2").fadeOut();
+	$("#body3").fadeOut();
+	$("#body4").fadeOut();
+	$("#results").fadeOut();
+	$("#termsofuse").fadeOut();
+	$("#howitworks").delay(500).fadeIn();
+	$("#how").addClass("actve");
+	$("#home").removeClass("actve");
+	$("#terms").removeClass("actve");
+});
+
+$("#terms").click(function() {
+	$("#body1").fadeOut();
+	$("#body2").fadeOut();
+	$("#body3").fadeOut();
+	$("#body4").fadeOut();
+	$("#results").fadeOut();
+	$("#howitworks").fadeOut();
+	$("#termsofuse").delay(500).fadeIn();
+	$("#terms").addClass("actve");
+	$("#home").removeClass("actve");
+	$("#how").removeClass("actve");
+});
+
+
+/*Valiating continue and starting*/
+$("#bring").click(function() {
+	if(!$('#name1').val()){
+		alert("We must know your username. Promise we won't misuse it. Read terms of use for more info.");
+	}
+	else{
+		$("#body4").hide();
+		$("#load").fadeIn();
+		getSpecificRecommendations($("#name1").val());
+	}
+});
+
+/*Valiating Quick Start and quick starting*/
+$("#submit-qs").click(function() {
+	if(!$('#uname_qs').val()){
+		alert("We must know your username. Promise we won't misuse it. Read terms of use for more info.");
+	}
+	else{
+		$("#body2").hide();
+		$("#load").fadeIn();
+		getRecommendations($("#uname_qs").val());
+	}
+});
+
+/*REG FORM PREV NEXT AND VALIDATION*/
 $("#next0").click(function() {
 	if(!$('#uname').val()){
 		alert("We must know your username. Promise we won't misuse it. Read terms of use for more info.");
@@ -117,6 +178,7 @@ $("#next2").click(function() {
 	else{
 		$("#genre-contain").show();
 		$("#lang-contain").hide();
+
 		$(".determinate").css("width","51%");
 	}	
 });
@@ -168,7 +230,8 @@ $("#next5").click(function() {
 	else{
 		$(".determinate").css("width","100%");
 		$(".body3").fadeOut();
-		$("#loading").fadeIn();
+		$("#load").fadeIn();
+		register(); 
 	}	
 });
 
@@ -189,10 +252,114 @@ $('#all').on('change', function() {
 	}    
 });
 
-function get_odd(){
-  var pyshell = require('python-shell')
-console.log(pyshell)
-pyshell.runString('x=1;print(x)', null, function (err, results) {
-  // script finished
-});
+function getRecommendations(username){
+	let {PythonShell} = require('python-shell');
+	var path = require("path")
+
+	var options = {
+	  	scriptPath : path.join(__dirname, '/engine'),
+	    args : [username]
+	}
+
+	var shell = new PythonShell('tone_analyzer.py', options);
+	
+	shell.on('message', function(message) {
+		$("#load").hide();		
+		$(':input').val('');
+		var array = message.split('*/*');
+		$("#vidrow").html(array[1]);
+		$("#musicrow").html(array[2]);
+		$("#toneslist").html(array[0]);
+		$("#username").html(username);
+		$("#results").fadeIn();
+		$("#home").removeClass("actve");
+		$('.carousel').carousel({
+			numVisible: 8
+		});
+	});
+}
+
+function getSpecificRecommendations(name){
+	let {PythonShell} = require('python-shell');
+	var path = require("path")
+
+	var options = {
+	  	scriptPath : path.join(__dirname, '/engine'),
+	    args : [name]
+	}
+
+	var shell = new PythonShell('continue.py', options);
+	
+	shell.on('message', function(message) {
+		$("#load").hide();	
+
+		if(message === "User not found"){
+			$("#body1").delay(500).fadeIn();
+			alert('Looks like you are new here. It won\'t work this way. Go home and get started first!');
+		}
+		else{
+			var array = message.split('*/*');
+			$(':input').val('');
+			$("#vidrow").html(array[1]);
+			$("#musicrow").html(array[2]);
+			$("#toneslist").html(array[0]);
+			$("#username").html(name);
+			$("#results").fadeIn();
+			$("#home").removeClass("actve");
+			$('.carousel').carousel({
+				numVisible: 8
+			});
+		}
+	});
+}
+
+function register(){
+	//GETTING VALUES
+	var uname = $('#uname').val();
+	var name = $('#name').val();
+	var lang = $('#lang').val();
+	var chipInstance = M.Chips.getInstance($(".chips"));
+	var g = chipInstance.chipsData;
+	var read = $('#read').val();
+	var animals = [];
+	$('input[name="animals"]:checked').each(function(){
+	   animals.push($(this).val());  //push values in array
+	});
+	var genre = [];
+	for(i=0; i<g.length; ++i){
+		genre.push(g[i].tag);
+	}
+
+	//CALLING PYTHON BACKEND
+	let {PythonShell} = require('python-shell');
+	var path = require("path")
+
+	var options = {
+	  	scriptPath : path.join(__dirname, '/engine'),
+	    args : [uname, name, lang, genre, read, animals]
+	}
+
+	var shell = new PythonShell('user_add.py', options);
+	
+	shell.on('message', function(message) {
+		$("#load").hide();
+		if(message === "0"){
+			$(".body3").css("display","flex").hide().delay(500).fadeIn();
+			alert('The name "'+ name +'" already exists. You will have to do it all over again. Its terrible, we know. :(');
+		}
+		else{
+			var array = message.split('*/*');
+			$(':input').val('');
+			$("#vidrow").html(array[1]);
+			$("#musicrow").html(array[2]);
+			$("#toneslist").html(array[0]);
+			$("#username").html(name);
+			$("#results").fadeIn();
+			$("#home").removeClass("actve");
+			$('.carousel').carousel({
+				numVisible: 8
+			});
+		}
+		
+	});
 }

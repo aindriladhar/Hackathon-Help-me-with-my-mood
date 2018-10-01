@@ -1,0 +1,213 @@
+{
+	"1":{
+		"name" : "TAKE ACTION",
+		"link": "https://www.youtube.com/embed/8_03FqAr2f8",
+		"type": "speech",
+		"things_in" : ["Talk"],
+		"mood" : ["Confident", "Motivational"]
+	},
+	"2":{
+		"name" : "Happiness is a journey, not a destination by Gaur Gopal Das",
+		"link": "https://www.youtube.com/embed/yYNdhOH-k64",
+		"type": "speech",
+		"things_in" : ["Talk"],
+		"mood" : ["Happy", "Motivational", "Sadness"]
+	},
+	"3":{
+		"name" : "If You Procrastinate - WATCH THIS | by Jay Shetty",
+		"link": "https://www.youtube.com/embed/tfAAQWdjLnw",
+		"type": "Speech",
+		"things_in" : ["Talk"],
+		"mood" : ["Tentative"]
+	},
+	"4":{
+		"name" : "How To Overcome Your Fears",
+		"link": "https://www.youtube.com/embed/VQXyYumRXUk",
+		"type": "Speech",
+		"things_in" : ["Talk"],
+		"mood" : ["Fear", "Motivational"]
+	},
+	"5":{
+		"name" : "Inside the mind of a master procrastinator | Tim Urban",
+		"link": "https://www.youtube.com/embed/arj7oStGLkU",
+		"type": "Speech",
+		"things_in" : ["Talk"],
+		"mood" : ["Tentative", "Motivational"]
+	},
+	"6":{
+		"name" : "This Video Will Make You Happy",
+		"link": "https://www.youtube.com/embed/JxJsai5nkGI",
+		"type": "Animal",
+		"things_in" : ["All"],
+		"mood" : ["Anger", "Fear", "Joy", "Sadness"]
+	},
+	"7":{
+		"name" : "Overcoming FEAR by Gaur Gopal das",
+		"link": "https://www.youtube.com/embed/TOzJRrGdMCs",
+		"type": "Speech",
+		"things_in" : ["Talk"],
+		"mood" : ["Fear", "Tentative", "Confident", "Motivational"]
+	},
+	"8":{
+		"name" : "You seem happy, here is something very random",
+		"link": "https://www.youtube.com/embed/GAl8eAX3wUE",
+		"type": "Speech",
+		"things_in" : ["Other"],
+		"mood" : ["Happy", "Joy"]
+	},
+	"9":{
+		"name" : "How To Be Confident",
+		"link": "https://www.youtube.com/embed/0Tk82hEHNnY",
+		"type": "Speech",
+		"things_in" : ["Talk"],
+		"mood" : ["Fear", "Tentative"]
+	},
+	"10":{
+		"name" : "Elon Musk: How To Achieve 10x More Than Your Peers",
+		"link": "https://www.youtube.com/embed/liJbB_0eCTo",
+		"type": "Speech",
+		"things_in" : ["Talk"],
+		"mood" : ["Motivational"]
+	},
+	"11":{
+		"name" : "Elon Musk: How To Achieve 10x More Than Your Peers",
+		"link": "https://www.youtube.com/embed/liJbB_0eCTo",
+		"type": "Speech",
+		"things_in" : ["Talk"],
+		"mood" : ["Motivational"]
+	},
+	"12":{
+		"name" : "How Jordan Peterson Wins An Argument",
+		"link": "https://www.youtube.com/embed/fS5nmy1v34c",
+		"type": "Speech",
+		"things_in" : ["Talk"],
+		"mood" : ["Analytical", "Motivational", "Anger"]
+	},
+	"13":{
+		"name" : "How To Be Sarcastic WITHOUT Being A Jerk",
+		"link": "https://www.youtube.com/embed/WefqSN8dqOU&t=433s",
+		"type": "Speech",
+		"things_in" : ["Talk"],
+		"mood" : ["Joy"]
+	},
+	"14":{
+		"name" : "3 Jokes Guaranteed To Make People Laugh",
+		"link": "https://www.youtube.com/embed/T6Ea6fPfMeQ",
+		"type": "Speech",
+		"things_in" : ["Talk"],
+		"mood" : ["Joy"]
+	},
+	"15":{
+		"name" : "How To NEVER Be Boring",
+		"link": "https://www.youtube.com/embed/_JxZY3d7kw0",
+		"type": "Speech",
+		"things_in" : ["Talk"],
+		"mood" : ["Sadness", "Analytical"]
+	},
+	"16":{
+		"name" : "How Tony Robbins Outsmarts Depression",
+		"link": "https://www.youtube.com/embed/uMbUa0nfzk8",
+		"type": "Speech",
+		"things_in" : ["Talk"],
+		"mood" : ["Sadness", "Fear"]
+	},
+	"17":{
+		"name" : "Is that your cat?",
+		"link": "https://www.youtube.com/embed/iPLQV2OTsS8",
+		"type": "Animal",
+		"things_in" : ["Cat"],
+		"mood" : ["Sadness", "Joy", "Anger"]
+	},
+	"18":{
+		"name" : "Dogs Who Fail At Being Dogs",
+		"link": "https://www.youtube.com/embed/kMhw5MFYU0s",
+		"type": "Animal",
+		"things_in" : ["Dog"],
+		"mood" : ["Sadness", "Joy", "Anger"]
+	},
+	"19":{
+		"name" : "Panda wants a hug from nanny, but nanny is working",
+		"link": "https://www.youtube.com/embed/r8B-RuJRI2A",
+		"type": "Animal",
+		"things_in" : ["Pandas"],
+		"mood" : ["Sadness", "Joy", "Anger"]
+	},
+	"20":{
+		"name" : "The Cutest Baby Bunny Rabbit",
+		"link": "https://www.youtube.com/embed/FC4Kun_BimM",
+		"type": "Animal",
+		"things_in" : ["Bunny"],
+		"mood" : ["Sadness", "Joy", "Anger"]
+	},
+	"21":{
+		"name" : "Penguins are awesome",
+		"link": "https://www.youtube.com/embed/3ht_87AZjoI",
+		"type": "Animal",
+		"things_in" : ["Penguin"],
+		"mood" : ["Sadness", "Joy", "Anger"]
+	},
+	"22":{
+		"name" : "Good Boy",
+		"link": "https://www.youtube.com/embed/7zbHQ9DlW0k",
+		"type": "Animal",
+		"things_in" : ["Sloth"],
+		"mood" : ["Sadness", "Joy", "Anger"]
+	},
+	"23":{
+		"name" : "Confused eh?",
+		"link": "https://www.youtube.com/embed/AvPkkwI6EV8",
+		"type": "Animal",
+		"things_in" : ["All"],
+		"mood" : ["Sadness", "Joy", "Anger"]
+	},
+	"24":{
+		"name" : "Be Confident..",
+		"link": "https://www.youtube.com/embed/eDu_tgqHtdM",
+		"type": "Animal",
+		"things_in" : ["All"],
+		"mood" : ["Tentative", "Confident", "Anger"]
+	},
+	"25":{
+		"name" : "You too will find someone",
+		"link": "https://www.youtube.com/embed/biX-8pPRHBM",
+		"type": "Animal",
+		"things_in" : ["Dog"],
+		"mood" : ["Sadness"]
+	},
+	"26":{
+		"name" : "Good time to be alive",
+		"link": "https://www.youtube.com/embed/29kx-cZXpww",
+		"type": "Animal",
+		"things_in" : ["Dog"],
+		"mood" : ["Anger", "Fear", "Joy", "Sadness", "Analytical", "Tentative", "Confident", "Love", "Motivational"]
+	},
+	"27":{
+		"name" : "We're sure you feel the same way right now",
+		"link": "https://www.youtube.com/embed/yp7ABJESOsA",
+		"type": "Animal",
+		"things_in" : ["Dog"],
+		"mood" : ["Sadness", "Joy", "Anger"]
+	},
+	"28":{
+		"name" : "Yea, well...Don't be like that",
+		"link": "https://www.youtube.com/embed/2fqwIPhAY1Q",
+		"type": "Animal",
+		"things_in" : ["Dog"],
+		"mood" : ["Analytical"]
+	},
+	"29":{
+		"name" : "You sure this isn't you?",
+		"link": "https://www.youtube.com/embed/jNQXAC9IVRw",
+		"type": "Animal",
+		"things_in" : ["Other"],
+		"mood" : ["Confident", "Joy", "Sadness"]
+	},
+	"30":{
+		"name" : "Never gets old",
+		"link": "https://www.youtube.com/embed/EwTZ2xpQwpA",
+		"type": "Animal",
+		"things_in" : ["Other"],
+		"mood" : ["Anger", "Fear", "Joy", "Sadness", "Analytical", "Tentative", "Confident", "Love", "Motivational"]
+	}
+}
+

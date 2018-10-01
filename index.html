@@ -12,18 +12,19 @@
   </head>
   <body>
 
-			<div class="sidebar">
+			<div class="sidebar" id="sidebar">
 					<p><i class="material-icons">mood</i><span>Mind Shift</span></p>
 					<ul>
 						<li class="actve" id="home"><i class="material-icons">launch</i><span>HOME</span></li>
-						<li><i class="material-icons">info_outline</i><span>HOW IT WORKS</span></li>
-						<li><i class="material-icons">help_outline</i><span>GET HELP</span></li>
-						<li><i class="material-icons">help_outline</i><span>TERMS OF USE</span></li>
+						<li id="how"><i class="material-icons" >info_outline</i><span>HOW IT WORKS</span></li>
+						<li ><i class="material-icons">help_outline</i><span>FAQs</span></li>
+						<li id="terms"><i class="material-icons">help_outline</i><span>TERMS OF USE</span></li>
 						<li><i class="material-icons">people_outline</i><span>ABOUT US</span></li>
 						
 					</ul>
 			</div>
 			<div class="main">
+
 				<div class="nav-wrapper">
 				    <span class="logo">Your cheerleader, when you need one!</span>
 				    <ul class="right">
@@ -32,7 +33,12 @@
 				        <li class="close" id="close-button"></li>
 				     </ul>
 				</div>
-				<div id="loading" style="display: none;">LOADING...</div>
+				<div class="clearfix"></div>
+				<!-----LOADER------>
+				<div id="load">
+					<img src="images/giphy.webp" frameBorder="0" class="giphy-embed" allowFullScreen></img>
+					<p>The rhino is getting your stuff. Be patient, do not go away from here while he is working or he might break stuff.</p>
+				</div>
 				<div class="mainbody body1 valign-wrapper" id="body1">
 
 					<div class="row">
@@ -88,8 +94,8 @@
 							<p>Lets get going</p>
 							<div class="input-field">
 							  	<i class="material-icons prefix">account_circle</i>
-							   	<input  id="icon_prefix" type="text" style="margin-left: 30px;">
-							  	<label for="icon_prefix">Twitter Username</label>
+							   	<input  id="uname_qs" type="text" style="margin-left: 30px;">
+							  	<label for="uname_qs">Twitter Username</label>
 						    </div>
 						    <button class="submit-qs" id="submit-qs">LOAD AWESOMENESS</button>
 						</div>
@@ -118,10 +124,10 @@
 								<div id="lang-contain">
 									<br><p class="label" id="name-label">What language do you prefer your music in? We currtnely offer English, hindi and Bengali</p>
 									<div class="input-field col s12">
-									<select multiple style="width: 200px;" name="garden">
-								      <option value="1">ENGLISH</option>
-								      <option value="2">HINDI</option>
-								      <option value="3">BENGALI</option>
+									<select multiple style="width: 200px;" name="garden" id="lang">
+								      <option value="English">ENGLISH</option>
+								      <option value="Hindi">HINDI</option>
+								      <option value="Bengali">BENGALI</option>
 								    </select>
 								</div>
 									<br><br><button class="next" id="next2">NEXT</button>
@@ -130,8 +136,9 @@
 								<div id="genre-contain">
 									<br><p class="label" id="genre-label">What genre of music do you prefer?</p>
 									<div class="chips chips-autocomplete chips-placeholder">
-									    <input class="custom-class">
+									    <input class="custom-class" id="genre">
 									</div>
+									<p style="color: #fff; text-align: center; opacity: 0.6;">Please select from the displayed list only.</p>
 									<br><br><button class="next" id="next3">NEXT</button>
 									<br><br><button class="next" id="prev2">PREVIOUS</button>
 
@@ -146,35 +153,35 @@
 									<br><p class="label" id="animal-label">What animal do you find cute?</p>
 									<p>
 								      	<label>
-								        	<input type="checkbox" class="animals"/>
+								        	<input type="checkbox" value="Cat" class="animals" name="animals"/>
 								        	<span>Cat</span>
 								      	</label>
 								      	<label>
-								        	<input type="checkbox" class="animals"/>
+								        	<input type="checkbox" value="Dog" class="animals" name="animals"/>
 								        	<span>Dog</span>
 								      	</label>
 								      	<label>
-								        	<input type="checkbox" class="animals"/>
+								        	<input type="checkbox" value="Bunny" class="animals" name="animals"/>
 								        	<span>Bunny</span>
 								      	</label>
 								    </p>
 								    <p>
 								      	<label>
-								        	<input id="checkbox" type="checkbox" class="animals"/>
+								        	<input id="checkbox" value="Panda" type="checkbox" class="animals" name="animals"/>
 								        	<span>Panda</span>
 								      	</label>
 								      	<label>
-								        	<input type="checkbox" class="animals"/>
+								        	<input type="checkbox" value="Sloth" class="animals" name="animals"/>
 								        	<span>Sloth</span>
 								      	</label>
 								      	<label>
-								        	<input type="checkbox" class="animals"/>
+								        	<input type="checkbox" value="Penguin" class="animals" name="animals"/>
 								        	<span>Penguin</span>
 								      	</label>
 								    </p>
 								    <p>
 								      	<label>
-								        	<input id="all" type="checkbox" class="animals"/>
+								        	<input id="all" type="checkbox" value="All" class="animals" name="animals"/>
 								        	<span>All of them, even Blob Fish</span>
 								      	</label>
 								    </p>
@@ -196,12 +203,75 @@
 									<br><p class="label" id="name1-label">What was your name again though?</p>
 									<input type="text" id="name1" placeholder="NAME"/>
 								</div>
-								<br><br><button class="next" id="next1" onclick="get_odd()">BRING THEM IN</button>
+								<br><br><button class="next" id="bring">BRING THEM IN</button>
 							</div>
 						</div>
 					</div>
 				</div>
 
+				<div class="results mainbody" id="results">
+					<div class="row z-depth-1" id="tonerow">
+						<div class="tone-wrapper">
+							<h2>Hey @<span id="username"></span></h2>
+							<p>Here's what we found from you tweets. Enjoy our specilized collection of music, videos and more below.</p>
+							<div class="row" id="toneslist">
+							</div>
+						</div>
+						
+					</div>
+					<div class="row z-depth-1 music-row">
+						<div class="music-wrapper">
+							<h2>Music</h2>
+							<p>Give your ears a treat with this awesome selection of music across your favoutite genre and in line with your mood.</p>
+							<div id="musicrow"></div>
+						</div>
+
+					</div>
+					<div class="row z-depth-1 vid-row">
+						<h2>Video</h2>
+						<p>These will definitely make you feel good!</p>
+						<div id="vidrow"></div>
+					</div>
+
+
+				</div>
+
+				<div class="howitworks mainbody" id="howitworks">
+					<div class="how-wrapper row ">
+						<div class="col s12 how-content z-depth-2 ">
+							<div class="how-header">How Mind Shift Works</div>
+							<div class="how-body">
+								<p>Mind Shift is entirely dependent on twitter timeline. Upon giving permissions (see terms of use), Mind Shift accesses the user's public tweets and then performs sentiment analysis on them. Based on the findings it suggests various things like music, videos, web articles, etc.</p>
+								<div class="diagram">
+									<div class="sec sec1">
+										<span>1</span>
+										Get you twitter username and access public tweets.
+									</div>
+									<div class="sec sec2">
+										<span>2</span>
+										Perform Analysis to find vital seniments.<br>
+									</div>
+									<div class="sec sec3">
+										<span>3</span>
+										Recommend music, videos, etc. based on your mood.
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="termsofuse mainbody" id="termsofuse">
+					<div class="terms-wrapper row ">
+						<div class="col s8 offset-s2 terms-content z-depth-2 ">
+							<div class="terms-header">Terms of use</div>
+							<div class="terms-body">
+								<p>Mind Shift is entirely dependent on twitter timeline. Upon giving permissions, Mind Shift accesses the user's public tweets and then performs sentiment analysis on them. Based on the findings it suggests various things like music, videos, web articles, etc.</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
 

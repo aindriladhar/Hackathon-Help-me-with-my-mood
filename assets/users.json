@@ -1,0 +1,59 @@
+{
+  "donald": {
+    "uname": "realdonaldtrump",
+    "lang": [
+      "English"
+    ],
+    "genre": [
+      "Pop",
+      "Dubstep"
+    ],
+    "read": "YES",
+    "animals": [
+      "Cat",
+      "Dog",
+      "Bunny",
+      "Talk"
+    ]
+  },
+  "prince": {
+    "uname": "PrinceDey20",
+    "lang": [
+      "English",
+      "Hindi",
+      "Bengali"
+    ],
+    "genre": [
+      "Pop",
+      "Dubstep",
+      "Regional"
+    ],
+    "read": "YES",
+    "animals": [
+      "Cat",
+      "Dog",
+      "Bunny",
+      "Talk"
+    ]
+  },
+  "shovan": {
+    "uname": "shovandey07",
+    "lang": [
+      "English",
+      "Hindi",
+      "Bengali"
+    ],
+    "genre": [
+      "Pop",
+      "Folk",
+      "Hip Hop",
+      "Rap",
+      "Rock"
+    ],
+    "read": "YES",
+    "animals": [
+      "All",
+      "Talk"
+    ]
+  }
+}

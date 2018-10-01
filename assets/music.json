@@ -1,0 +1,223 @@
+{
+	"1":{
+		"language" : "Hindi",
+		"Genre" : "Bollywood",
+		"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/321875638&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true\"></iframe>",
+		"mood": ["Joy", "Love"]
+	},
+	"2":{
+		"language" : "English",
+		"Genre" : "Rock",
+		"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\"  src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/28670494&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true\"></iframe>",
+		"mood": ["Anger"]
+	},
+    	"3":{
+		"language" : "English",
+		"Genre" : "Rock",
+		"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/334549790&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+		"mood": [""]
+	},
+     	"4":{
+		"language" : "Hindi",
+		"Genre" : "Bollywood",
+		"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\"  src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/39004730&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+		"mood": ["Love"]
+	},
+     
+     	"5":{
+		"language" : "Bengali",
+		"Genre" : "Regional",
+		"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/8374695&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+		"mood": ["Analytical","Joy"]
+	},
+     
+     	"6":{
+		"language" : "English",
+		"Genre" : "Pop",
+		"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\"  src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/190490447&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+		"mood": ["Love"]
+	},
+     	"7":{
+		"language" : "Hindi",
+		"Genre" : "Bollywood",
+		"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/276609079&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+		"mood": ["Motivational"]
+      },
+    	"8":{
+		"language" : "English",
+		"Genre" : "Rock",
+		"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/244184510&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+		"mood": ["Sadness"]
+      },
+      "9":{
+		"language" : "English",
+		"Genre" : "Rock",
+		"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/45001128&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+		"mood": ["Motivational"]
+      },
+      
+      "10":{
+		"language" : "Hindi",
+		"Genre" : "Rock",
+		"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/456779637&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+		"mood": ["Motivational"]
+      },
+      
+      "11":{
+		"language" : "English",
+		"Genre" : "Pop",
+		"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/278002889&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+		"mood": ["Love"]
+      },
+      
+      
+      "12":{
+		"language" : "Hindi",
+		"Genre" : "Rock",
+		"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/270200486&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+		"mood": ["Joy"]
+      },
+       "13":{
+		"language" : "English",
+		"Genre" : "Pop",
+		"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/248310182&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+		"mood": ["Joy"]
+      },
+       
+       "14":{
+		"language" : "English",
+		"Genre" : "Pop",
+		"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/202631934&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+		"mood": ["Sadness"]
+      },
+       
+       "15":{
+		"language" : "English",
+		"Genre" : "Rock",
+		"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/81798621&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+		"mood": ["Joy","Motivational"]
+      },
+    
+       "16":{
+		"language" : "English",
+		"Genre" : "Rock",
+		"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/81798621&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+		"mood": ["Joy","Motivational"]
+      },
+
+      
+       "17":{
+		"language" : "English",
+		"Genre" : "Rock",
+		"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/302554345&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+		"mood": ["Motivational","Fear"]
+      },
+	 "18":{
+			"language" : "Hindi",
+			"Genre" : "Love",
+			"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/266559082&color=%235a0078&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+			"mood": ["Love"]
+	      },
+	"19":{
+			"language" : "Bengali",
+			"Genre" : "Folk",
+			"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/107043869&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+			"mood": ["Love"]
+	      },
+	"20":{
+			"language" : "Bengali",
+			"Genre" : "Folk",
+			"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/107043869&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+			"mood": ["Rock", "Alternative"]
+	      },	      
+	"21":{
+			"language" : "Bollywood",
+			"Genre" : "Rock",
+			"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/183093082&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+			"mood": ["Anger","Love"]
+	      },
+	"23":{
+			"language" : "Bollywood",
+			"Genre" : "Jazz",
+			"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/439184241&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+			"mood": ["Anger","Fear"]
+	      },
+	"24":{
+			"language" : "Hindi",
+			"Genre" : "Bollywood",
+			"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/230896186&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+			"mood": ["Sadness", "Love"]
+	      },
+	"24":{
+			"language" : "Hindi",
+			"Genre" : "Folk",
+			"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/230896186&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+			"mood": ["Joy", "Love", "Confident"]
+	      },
+	"25":{
+			"language" : "Hindi",
+			"Genre" : "Bollywood",
+			"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/105128434&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+			"mood": ["Sadness","Love"]
+	      },
+	"26":{
+			"language" : "Hindi",
+			"Genre" : "Bollywood",
+			"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/49538584&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+			"mood": ["Love", "Motivational"]
+	      },
+	      
+	"27":{
+			"language" : "English",
+			"Genre" : "Instrumental",
+			"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/43802376&color=%235a0078&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+			"mood": ["Motivational"]
+	      },
+
+	"28":{
+			"language" : "English",
+			"Genre" : "Pop",
+			"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/92945605&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+			"mood": ["Motivational", "Confident"]
+	      },
+
+	"29":{
+			"language" : "English",
+			"Genre" : "Pop",
+			"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/125498763&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+			"mood": ["Tentative","Joy"]
+	      },
+
+	"30":{
+			"language" : "English",
+			"Genre" : "Rap",
+			"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/191477804&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+			"mood": ["Joy", "Angry"]
+	      },
+	"30":{
+			"language" : "English",
+			"Genre" : "Instrumental",
+			"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/21468034&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+			"mood": ["Sadness"]
+	      },
+	"31":{
+			"language" : "English",
+			"Genre" : "Metal",
+			"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/233646300&color=%235a0078&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+			"mood": ["Angry", "Assertive", "Confident"]
+	      },
+	"32":{
+			"language" : "English",
+			"Genre" : "Metal",
+			"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/222009350&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+			"mood": ["Angry", "Assertive", "Sad", "Confident"]
+	      },
+	"33":{
+			"language" : "English",
+			"Genre" : "Rap",
+			"soundcloud": "<iframe width=\"200\" height=\"200\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/26487927&color=%235a0078&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
+			"mood": ["Assertive", "Confident"]
+	      }
+}
+
+
