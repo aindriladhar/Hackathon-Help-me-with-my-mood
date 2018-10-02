@@ -5,6 +5,7 @@ from functions import *
 
 
 userID = sys.argv[1]
+print('here')
 
 text = getTweets(userID)
 
@@ -30,4 +31,6 @@ music = getMusic(tone_dict)
 formatted_music = formatMusic(music)
 
 print(str(formatted_tones)+'*/*'+str(formatted_videos)+'*/*'+str(formatted_music))
+
+print('end')
 sys.stdout.flush()

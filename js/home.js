@@ -64,12 +64,14 @@ $('.chips').chips();//MATERIALIZE CHIPS
 //NAV REQUESTS
 document.getElementById("quick-start").addEventListener("click",function(e) {
 	$("#body1").fadeOut();
+	$("#results").fadeOut();
 	$("#body2").delay(500).fadeIn();
 	$("#home").removeClass("actve");
 });
 
 document.getElementById("reg").addEventListener("click",function(e) {
 	$("#body1").fadeOut();
+	$("#results").fadeOut();
 	$(".body3").css("display","flex").hide().delay(500).fadeIn();
 	$("#home").removeClass("actve");
 	$("#uname-contain").show();
@@ -81,6 +83,7 @@ document.getElementById("reg").addEventListener("click",function(e) {
 });
 
 document.getElementById("continue").addEventListener("click",function(e) {
+	$("#results").fadeOut();
 	$("#body1").fadeOut();
 	$(".body4").css("display","flex").hide().delay(500).fadeIn();
 	$("#home").removeClass("actve");
