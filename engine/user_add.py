@@ -49,6 +49,11 @@ userID = uname
 text = getTweets(userID)
 	
 #setting up tone_analyzer
+
+if text == 'error':
+	print('1')
+	sys.stdout.flush()
+	exit()
 	
 if text == 'no tweet':
 	tone_dict = {'Joy': 0, 'Confident': 0}
@@ -56,6 +61,10 @@ if text == 'no tweet':
 else:
 	tone_analysis = getTones(text)
 	tone_dict = formatTones(tone_analysis)
+	if not tone_dict:
+		print('3')
+		sys.stdout.flush()
+		exit()
 	formatted_tones = formatTonesHtml(tone_dict)
 
 #recommendation

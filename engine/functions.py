@@ -87,14 +87,12 @@ def getVideos(tone_dict):
 	data = dict(data)
 
 	tone_list = list(tone_dict.keys())
-
 	video_list = []
 	for key in data.keys():
 	    for mood in data[key]['mood']:
 	        if mood in tone_list:
 	            video_list.append(key)
 	            break
-
 	final = random.sample(range(1, len(video_list)), 2)
 	videos = [data[video_list[final[0]]], data[video_list[final[1]]]]
 	return videos

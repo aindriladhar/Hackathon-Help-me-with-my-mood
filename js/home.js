@@ -30,6 +30,9 @@ document.getElementById("home").addEventListener("click",function(e) {
 	$("#aboutbtn").removeClass("actve");
 	$("#how").removeClass("actve");
 	$("#body1").delay(500).fadeIn();
+	$("#vidrow").html('');
+	$("#musicrow").html('');
+	$("#toneslist").html('');
 });
 
 
@@ -102,6 +105,9 @@ $("#how").click(function() {
 	$("#home").removeClass("actve");
 	$("#terms").removeClass("actve");
 	$("#aboutbtn").removeClass("actve");
+	$("#vidrow").html('');
+	$("#musicrow").html('');
+	$("#toneslist").html('');
 });
 
 $("#terms").click(function() {
@@ -117,6 +123,9 @@ $("#terms").click(function() {
 	$("#home").removeClass("actve");
 	$("#how").removeClass("actve");
 	$("#aboutbtn").removeClass("actve");
+	$("#vidrow").html('');
+	$("#musicrow").html('');
+	$("#toneslist").html('');
 });
 
 
@@ -133,6 +142,9 @@ $("#aboutbtn").click(function() {
 	$("#home").removeClass("actve");
 	$("#how").removeClass("actve");
 	$("#terms").removeClass("actve");
+	$("#vidrow").html('');
+	$("#musicrow").html('');
+	$("#toneslist").html('');
 });
 
 
@@ -301,6 +313,11 @@ function getRecommendations(username){
 			$("#body1").delay(500).fadeIn();
 			$(':input').val('');			
 		}
+		if(message === "3"){
+			alert('Something went wrong. We could not analyze your mood. Your recent tweets are probably in some language that we do not support.');
+			$("#body1").delay(500).fadeIn();
+			$(':input').val('');			
+		}
 		else{
 			$(':input').val('');
 			var array = message.split('*/*');
@@ -364,6 +381,7 @@ function register(){
 	$('input[name="animals"]:checked').each(function(){
 	   animals.push($(this).val());  //push values in array
 	});
+	animals.push('Talk');
 	var genre = [];
 	for(i=0; i<g.length; ++i){
 		genre.push(g[i].tag);
@@ -387,6 +405,16 @@ function register(){
 			alert('The name "'+ name +'" already exists. You will have to do it all over again. Its terrible, we know. :(');
 		}
 		else{
+			if(message === "1"){
+				alert('Twitter does not know the user you are looking for!');
+				$("#body1").delay(500).fadeIn();	
+				$(':input').val('');	
+			}
+			else if(message === "3"){
+				alert('Something went wrong. We could not analyze your mood. Your recent tweets are probably in some language that we do not support.');
+				$("#body1").delay(500).fadeIn();
+				$(':input').val('');			
+			}
 			var array = message.split('*/*');
 			$(':input').val('');
 			$("#vidrow").html(array[1]);

@@ -55,5 +55,41 @@
       "All",
       "Talk"
     ]
+  },
+  "modi": {
+    "uname": "narendramodi",
+    "lang": [
+      "English",
+      "Hindi"
+    ],
+    "genre": [
+      "Pop",
+      "Rock",
+      "Regional",
+      "Folk"
+    ],
+    "read": "YES",
+    "animals": [
+      "All",
+      "Talk"
+    ]
+  },
+  "srk": {
+    "uname": "iamsrk",
+    "lang": [
+      "English",
+      "Hindi"
+    ],
+    "genre": [
+      "Pop",
+      "Rock",
+      "Regional",
+      "Indie"
+    ],
+    "read": "YES",
+    "animals": [
+      "All",
+      "Talk"
+    ]
   }
 }
