@@ -19,14 +19,14 @@ if name in data.keys(): #checking if user name exists
 	#setting up tone_analyzer
 	
 	if text == 'no tweet':
-		tone_dict = {'Joy': 0, 'Confident': 0} #assigning dummy tones
+		tone_dict = {'Joy': 80, 'Confident': 20} #assigning dummy tones
 		formatted_tones = '<h5 style="color:teal;">You haven\'t posted for a while. But that does not matter. Find things below that you will like.</h5>'
 	else:
 		tone_analysis = getTones(text)
 		tone_dict = formatTones(tone_analysis)
 		if not tone_dict:
-			tone_dict = {'Joy': 0, 'Confident': 0} #assigning dummy tones
-			formatted_tones = '<h5 style="color:teal;"> We could not analyze your mood. Your recent tweets are probably in some language that we do not support yet. But since you are a member of Mind Shift you can still enjoy our recommendations.</h5>'
+			tone_dict = {'Joy': 80, 'Confident': 20} #assigning dummy tones
+			formatted_tones = '<h5 style="co2or:teal;"> We could not analyze your mood. Your recent tweets are probably in some language that we do not support yet. But since you are a member of Mind Shift you can still enjoy our recommendations.</h5>'
 		else:
 			formatted_tones = formatTonesHtml(tone_dict)
 

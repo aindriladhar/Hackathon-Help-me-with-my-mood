@@ -26,8 +26,8 @@ def getTweets(userID):
 		tweets = api.user_timeline(screen_name=userID, count=100, include_rts = False, tweet_mode = 'extended')
 	except tweepy.TweepError as e:
 		text = 'error'
+		print(text)
 		return text
-		exit()
 	text = [tweet.full_text for tweet in tweets if (datetime.datetime.now() - tweet.created_at).days < 1]
 	if len(text) < 1:
 		text = [tweet.full_text for tweet in tweets if (datetime.datetime.now() - tweet.created_at).days < 7]
@@ -72,15 +72,20 @@ def formatTones(tone_analysis):
 	    sys.stdout.flush()
 
 	#formatting result
-	for key,val in tone_dict.items():
-	    tone_dict[key] = round( ((tone_dict[key][0] / tone_dict[key][1]) * 100))
+	tone_values = list(tone_dict.values())
+	tone_values = [round( ((x[0] / x[1]) * 100)) for x in tone_values]
+	tone_values = sorted(tone_values, reverse = True)
+
+	i=0
+	for key in tone_dict.keys():
+	    tone_dict[key] = tone_values[i]
+	    i += 1
 	return tone_dict
 
 def getVideos(tone_dict):
 	'''
 		receives a dictionary having key val pair of tone and percentage and returns videos based on those mood
 	'''
-
 	f = open("assets/video.json","r")
 	data = f.read()
 	data = json.loads(data)
@@ -93,8 +98,10 @@ def getVideos(tone_dict):
 	        if mood in tone_list:
 	            video_list.append(key)
 	            break
-	final = random.sample(range(1, len(video_list)), 2)
+	final = random.sample(range(len(video_list)), 2)
+
 	videos = [data[video_list[final[0]]], data[video_list[final[1]]]]
+
 	return videos
 
 def formatTonesHtml(tone_dict):
@@ -135,19 +142,32 @@ def getMusic(tone_dict):
 
 	tone_list = list(tone_dict.keys())
 
-	music_list = []
+	total_tone_val = sum(tone_dict.values())
+	d = {}
+	for key, val in tone_dict.items():
+		d[key] = round((val / total_tone_val) * 10)
+
+	music_list = {}
 	for key in data.keys():
-	    for mood in data[key]['mood']:
-	        if mood in tone_list:
-	            music_list.append(key)
-	            break
-	if len(music_list)<10:
-		final = random.sample(range(1, len(music_list)), len(music_list)-1)
-	else:
-		final = random.sample(range(1, len(music_list)), 10)
+		for mood in data[key]['mood']:
+			if mood in tone_dict:
+				if mood in music_list:
+					music_list[mood].append(key)
+				else:
+					music_list[mood] = []
+					music_list[mood].append(key)
+				break
+
+	final = dict.fromkeys(music_list.keys(),[])
+	for key, val in music_list.items():
+		if len(val) < d[key]:
+			final[key] = random.sample(range(len(val)), len(val))
+		else:
+			final[key] = random.sample(range(len(val)), d[key])
 	music = []
-	for i in final:
-		music.append(data[music_list[i]])
+	for key,val in final.items():
+		for i in val:
+			music.append(data[music_list[key][i]])
 	return music
 
 def formatMusic(music):	
@@ -193,7 +213,7 @@ def getPersonalisedVideos(tone_dict, data):
 
 
 
-	final = random.sample(range(1, len(final_video_list)), 2)
+	final = random.sample(range(len(final_video_list)), 2)
 	videos = [vids[final_video_list[final[0]]], vids[final_video_list[final[1]]]]
 	return videos
 
@@ -210,15 +230,42 @@ def getPersonalisedMusic(tone_dict, data):
 	tone_list = list(tone_dict.keys())
 
 	music_list = []
+	total_tone_val = sum(tone_dict.values())
+	d = {}
+
+	#getting tone wise max number of songss
+	for key, val in tone_dict.items():
+		d[key] = round((val / total_tone_val) * 10)
+
+	#finding songs tonewise
+	music_list = {}
 	for key in music.keys():
-	    for mood in music[key]['mood']:
-	        if mood in tone_list:
-	            music_list.append(key)
-	            break
+		for mood in music[key]['mood']:
+			if mood in tone_dict:
+				if mood in music_list:
+					music_list[mood].append(key)
+				else:
+					music_list[mood] = []
+					music_list[mood].append(key)
+				break
+
+	#Selecting songs randomly according to tone and max no
+	final = dict.fromkeys(music_list.keys(),[])
+	for key, val in music_list.items():
+		if len(val) < d[key]:
+			final[key] = random.sample(range(len(val)), len(val))
+		else:
+			final[key] = random.sample(range(len(val)), d[key])
+
+	#merging all selecred into a list
+	music_list2= []
+	for key,val in final.items():
+		for i in val:
+			music_list2.append(music_list[key][i])
 
 	#language filter
 	music_list1 = []
-	for key in music_list:
+	for key in music_list2:
 		for lang in data['lang']:
 			if lang == music[key]['language']:
 				music_list1.append(key)
@@ -233,11 +280,14 @@ def getPersonalisedMusic(tone_dict, data):
 				break
 
 	length = len(music_list)
-	if length<10:
-		final = random.sample(range(1, length), length-1)
-	else:
-		final = random.sample(range(1, length), 10)
+	if length >=  10:
+		final = random.sample(range(length), 10)
+	elif length < 10 and length > 0:
+		final = random.sample(range(length), length-1)
+		
 	music_val = []
 	for i in final:
 		music_val.append(music[music_list[i]])
 	return music_val
+
+

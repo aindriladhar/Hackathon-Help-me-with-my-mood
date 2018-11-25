@@ -302,11 +302,11 @@ function getRecommendations(username){
 	
 	shell.on('message', function(message) {
 		$("#load").hide();		
-		$("#result").hide();		
+		$("#result").hide();
 		if(message === "1"){
 			alert('Twitter does not know the user you are looking for!');
-			$("#body1").delay(500).fadeIn();	
-			$(':input').val('');	
+			$("#body1").delay(500).fadeIn();
+			$(':input').val('');
 		}
 		if(message === "2"){
 			alert('You did not post anything recently! If you still want our recommendations, Get started by creating your profile.');

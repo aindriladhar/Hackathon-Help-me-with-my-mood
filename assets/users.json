@@ -91,5 +91,70 @@
       "All",
       "Talk"
     ]
+  },
+  "asdsadsa": {
+    "uname": "asdsasd",
+    "lang": [
+      "English",
+      "Bengali"
+    ],
+    "genre": [
+      "Pop",
+      "Dubstep",
+      "Alternative"
+    ],
+    "read": "YES",
+    "animals": [
+      "All",
+      "Talk"
+    ]
+  },
+  "gjhhjj": {
+    "uname": "ghgj",
+    "lang": [
+      "English",
+      "Hindi",
+      "Bengali"
+    ],
+    "genre": [
+      "Rap",
+      "Pop"
+    ],
+    "read": "YES",
+    "animals": [
+      "All",
+      "Talk"
+    ]
+  },
+  "johnsh": {
+    "uname": "john",
+    "lang": [
+      "English",
+      "Hindi",
+      "Bengali"
+    ],
+    "genre": [
+      "Pop"
+    ],
+    "read": "NO",
+    "animals": [
+      "",
+      "Talk"
+    ]
+  },
+  "trump": {
+    "uname": "realdonaldtrump",
+    "lang": [
+      "Hindi"
+    ],
+    "genre": [
+      "Pop",
+      "Rock"
+    ],
+    "read": "NO",
+    "animals": [
+      "",
+      "Talk"
+    ]
   }
 }
